@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NP4-Ry-rEB">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SKa-Xe-UyF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="NP4-Ry-rEB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="maC-5F-kz7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3hq-aL-sp5" kind="relationship" relationship="rootViewController" id="3sX-db-Ah4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTY-P1-WF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-372"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="nPC-La-XHQ">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" id="3hq-aL-sp5" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Ad-ie-hVz"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8f-SI-SJQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ddM-bL-m51">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jRf-Co-GZa"/>
+                    <connections>
+                        <segue destination="Oos-TG-5vT" kind="push" identifier="loginToHomeSegue" id="g1R-EJ-C5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRG-3R-9Im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-372"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="T9e-2K-eo3">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" id="Oos-TG-5vT" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EdR-2G-b3R"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMz-35-STV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oml-CD-j0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W2c-aM-M0W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZu-QT-YXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-372"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
